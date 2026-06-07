@@ -1,0 +1,353 @@
+{
+  "profile": {
+    "name": "Prathamesh Kunjeer",
+    "currentRole": "Salesforce Developer / Administrator",
+    "location": "Pune, Maharashtra, India",
+    "experience": "3.8+ years",
+    "summary": "Salesforce Developer with 3.8+ years of experience designing scalable CRM, Service Cloud, and telecom order management solutions. Skilled in Apex, Lightning Web Components, OmniStudio, Flow automation, Agentforce, and API integrations. Experienced in delivering enterprise solutions across Telecom, Insurance, and Financial Services domains, with a focus on efficient, user-centric applications powered by automation, AI, and modern Salesforce technologies.",
+    "coreStrengths": [
+      "Salesforce Development",
+      "Service Cloud Solutions",
+      "OmniStudio Consultation",
+      "Agentforce and AI Solutions",
+      "Enterprise Integrations",
+      "CRM Automation",
+      "Agile Delivery",
+      "Mentorship and Knowledge Sharing"
+    ],
+    "domains": [
+      "Telecommunications",
+      "Insurance",
+      "Financial Services",
+      "Artificial Intelligence",
+      "Banking"
+    ],
+    "education": {
+      "degree": "Bachelor of Engineering (B.E.)",
+      "institution": "Savitribai Phule Pune University"
+    },
+    "interests": [
+      "LinkedIn content creation",
+      "Salesforce education",
+      "Photography",
+      "Travel Photography",
+      "Nature Photography",
+      "Event Photography",
+      "Creative Visual Storytelling"
+    ]
+  },
+  "skills": {
+    "salesforce": [
+      "Sales Cloud",
+      "Service Cloud",
+      "Experience Cloud",
+      "Email-to-Case",
+      "Web-to-Lead",
+      "Agentforce",
+      "OmniStudio"
+    ],
+    "development": [
+      "Apex",
+      "Lightning Web Components",
+      "Triggers",
+      "Batch Apex",
+      "Custom Metadata",
+      "Dynamic SOQL",
+      "Invocable Apex"
+    ],
+    "omniStudio": [
+      "FlexCards",
+      "OmniScripts",
+      "DataRaptors",
+      "Integration Procedures"
+    ],
+    "automation": [
+      "Flows",
+      "Validation Rules",
+      "Approval Processes",
+      "Dynamic Forms",
+      "Sharing Rules",
+      "Permission Sets"
+    ],
+    "integrations": [
+      "REST APIs",
+      "Named Credentials",
+      "External System Integrations",
+      "Integration Procedures"
+    ],
+    "ai": [
+      "Agentforce",
+      "Agentforce Actions",
+      "Prompt Engineering",
+      "Einstein Vector Search",
+      "Retrieval-Augmented Generation",
+      "AI Agent Design",
+      "Prompt Defense"
+    ],
+    "tools": [
+      "VS Code",
+      "GitHub",
+      "Data Loader",
+      "Jira",
+      "Salesforce CLI"
+    ]
+  },
+  "certifications": [
+    {
+      "name": "Salesforce Certified Administrator",
+      "issuer": "Salesforce",
+      "category": "Administration",
+      "description": "Demonstrates expertise in Salesforce administration, security, automation, and data management."
+    },
+    {
+      "name": "Salesforce Certified Platform App Builder",
+      "issuer": "Salesforce",
+      "category": "Administration",
+      "description": "Validates expertise in designing custom applications using declarative Salesforce capabilities."
+    },
+    {
+      "name": "Salesforce Certified Platform Developer I",
+      "issuer": "Salesforce",
+      "category": "Developer",
+      "description": "Validates Apex, LWC, Visualforce, and Salesforce development skills."
+    },
+    {
+      "name": "Salesforce Certified JavaScript Developer I",
+      "issuer": "Salesforce",
+      "category": "Developer",
+      "description": "Demonstrates proficiency in modern JavaScript and front-end development concepts."
+    },
+    {
+      "name": "Salesforce Certified Service Cloud Consultant",
+      "issuer": "Salesforce",
+      "category": "Consultant",
+      "description": "Validates expertise in designing and implementing customer service solutions."
+    },
+    {
+      "name": "Salesforce Certified OmniStudio Consultant",
+      "issuer": "Salesforce",
+      "category": "Consultant",
+      "description": "Demonstrates expertise in OmniStudio architecture and implementation."
+    },
+    {
+      "name": "Salesforce Certified Agentforce Specialist",
+      "issuer": "Salesforce",
+      "category": "AI",
+      "description": "Validates AI-powered customer service and Agentforce implementation capabilities."
+    }
+  ],
+  "projects": [
+    {
+      "id": "telstra-om-plus",
+      "name": "Telstra OM+",
+      "role": "Salesforce Developer",
+      "client": "Telstra",
+      "domain": "Telecommunications",
+      "overview": "Worked on Telstra's Order Manager Plus platform supporting telecom order orchestration across Mobile, Fixed, and Energy services. The platform manages the complete customer order lifecycle from qualification through provisioning.",
+      "responsibilities": [
+        "Developed OmniStudio FlexCards for telecom order lifecycle management.",
+        "Built reusable Salesforce solutions for order visibility.",
+        "Designed a bulkified Apex trigger framework for high-volume telecom order lifecycle transactions.",
+        "Built Agentforce conversational topics.",
+        "Implemented OmniStudio Integration Procedures.",
+        "Developed Flow-based eligibility validations and orchestration for order hold and resume processes.",
+        "Participated in Agile ceremonies and sprint planning.",
+        "Collaborated with business analysts and solution architects."
+      ],
+      "achievements": [
+        "Improved telecom order visibility.",
+        "Reduced service processing delays.",
+        "Improved operational efficiency.",
+        "Reduced L1 service tickets by 25% through AI-powered self-service.",
+        "Ensured only qualified orders reached provisioning systems.",
+        "Supported large-scale enterprise order processing."
+      ],
+      "technologies": [
+        "Salesforce",
+        "Service Cloud",
+        "Apex",
+        "OmniStudio",
+        "FlexCards",
+        "Flows",
+        "Agentforce",
+        "Integration Procedures",
+        "REST Integrations"
+      ]
+    },
+    {
+      "id": "unum-os",
+      "name": "Unum OS",
+      "role": "Salesforce Administrator / Developer",
+      "client": "Unum OS",
+      "domain": "Insurance",
+      "overview": "Worked on Unum's insurance operations platform supporting policy management and claims processing, with focus on automation, compliance, data quality, and secure access management.",
+      "responsibilities": [
+        "Developed Batch Apex processes for large-scale insurance policy data processing.",
+        "Implemented Service Cloud automation for claims workflows.",
+        "Built claims workflow automations.",
+        "Developed multi-level approval process solutions.",
+        "Performed large-scale data migration activities.",
+        "Configured role hierarchies.",
+        "Managed permission sets and sharing models.",
+        "Improved data governance and integrity."
+      ],
+      "achievements": [
+        "Migrated 50,000+ legacy policy records using Data Loader.",
+        "Improved data quality, reliability, and historical availability.",
+        "Reduced claims processing turnaround time.",
+        "Strengthened compliance controls.",
+        "Enforced secure region-based and role-based data access.",
+        "Improved operational efficiency."
+      ],
+      "technologies": [
+        "Salesforce",
+        "Service Cloud",
+        "Apex",
+        "Batch Apex",
+        "Flows",
+        "Approval Processes",
+        "Data Loader",
+        "Security Model"
+      ]
+    },
+    {
+      "id": "piramal-finance",
+      "name": "Piramal Finance",
+      "role": "Salesforce Developer",
+      "domain": "Financial Services",
+      "overview": "Worked on Salesforce-based financial services solutions supporting customer relationship management and business process automation.",
+      "responsibilities": [
+        "Performed Salesforce customization and configuration.",
+        "Implemented automation solutions.",
+        "Provided user support and enhancements.",
+        "Supported requirement analysis.",
+        "Handled development and testing activities."
+      ],
+      "achievements": [
+        "Delivered business enhancements.",
+        "Improved operational processes.",
+        "Supported enterprise CRM initiatives."
+      ],
+      "technologies": [
+        "Salesforce",
+        "Apex",
+        "Flows",
+        "Service Cloud",
+        "Sales Cloud"
+      ]
+    },
+    {
+      "id": "ai-customer-service-agent",
+      "name": "AI Customer Service Agent",
+      "role": "Salesforce Developer",
+      "domain": "Artificial Intelligence / Banking",
+      "overview": "Built an autonomous AI-powered banking assistant using Salesforce Agentforce to demonstrate practical enterprise AI implementation.",
+      "responsibilities": [
+        "Designed conversational AI architecture.",
+        "Developed Invocable Apex actions.",
+        "Implemented OTP authentication.",
+        "Configured Einstein Vector Search.",
+        "Built prompt defense mechanisms.",
+        "Designed banking support workflows."
+      ],
+      "features": [
+        "Account Balance Inquiry",
+        "Transaction History",
+        "Card Blocking",
+        "Insurance FAQs",
+        "Prompt Defense"
+      ],
+      "achievements": [
+        "Passed planned test scenarios across 10 scenarios.",
+        "Demonstrated enterprise AI implementation patterns.",
+        "Showcased Agentforce capabilities."
+      ],
+      "technologies": [
+        "Agentforce",
+        "Apex",
+        "Invocable Apex",
+        "Einstein Vector Search",
+        "Dynamic SOQL",
+        "Salesforce AI",
+        "OTP Authentication"
+      ],
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Prathamesh-Kunjeer/AGENTFORCE-Arya-customer-service-agent"
+        }
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "title": "Emergency Response Team",
+      "organization": "Cognizant",
+      "description": "Active member of Cognizant's Emergency Response Team, supporting workplace safety initiatives, emergency preparedness, and employee well-being activities.",
+      "impact": [
+        "Supported emergency response readiness.",
+        "Contributed to workplace safety initiatives."
+      ]
+    },
+    {
+      "title": "Fun and Engagement Team",
+      "organization": "Telstra",
+      "description": "Member of Telstra's Fun and Engagement Team responsible for planning and organizing employee engagement activities, team-building initiatives, and workplace events.",
+      "impact": [
+        "Organized employee engagement programs.",
+        "Improved team collaboration.",
+        "Created positive workplace experiences."
+      ]
+    },
+    {
+      "title": "Mentorship Activities",
+      "description": "Mentor for new Salesforce professionals and team members, assisting with onboarding, knowledge sharing, interview preparation, and Salesforce career guidance.",
+      "impact": [
+        "Accelerated onboarding.",
+        "Promoted a knowledge-sharing culture.",
+        "Supported team development."
+      ]
+    },
+    {
+      "title": "LinkedIn Content Creation",
+      "description": "Creates educational Salesforce content focused on simplifying complex concepts through practical examples, relatable analogies, and visually engaging infographics.",
+      "focusAreas": [
+        "Salesforce Development",
+        "Apex",
+        "Lightning Web Components",
+        "Integrations",
+        "Data Cloud",
+        "Agentforce",
+        "Interview Preparation"
+      ],
+      "impact": [
+        "Helps Salesforce professionals learn efficiently through structured and visual learning approaches."
+      ]
+    }
+  ],
+  "hackathons": [
+    {
+      "name": "AWS and Cloud Innovation Events",
+      "years": [
+        "2025",
+        "2026"
+      ],
+      "description": "Participated in cloud innovation and technology-focused hackathons and learning events to expand knowledge beyond the Salesforce ecosystem and explore cloud-native architectures and modern development practices.",
+      "outcomes": [
+        "Improved cloud knowledge.",
+        "Enhanced problem-solving skills.",
+        "Gained exposure to innovative technologies."
+      ],
+      "notes": "Specific hackathon names can be added later."
+    }
+  ],
+  "contact": {
+    "email": "prathamkunjeer@gmail.com",
+    "phone": "+91-8237919713",
+    "location": "Pune, Maharashtra, India",
+    "linkedin": "https://www.linkedin.com/in/prathamesh-kunjeer/",
+    "github": "https://github.com/Prathamesh-Kunjeer/AGENTFORCE-Arya-customer-service-agent",
+    "trailhead": "https://www.salesforce.com/trailblazer/prathameshkunjeer",
+    "availability": "Open to Salesforce Development, Consulting, AI, and Cloud Technology opportunities."
+  }
+}
