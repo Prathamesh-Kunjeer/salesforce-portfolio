@@ -20,6 +20,9 @@ export function HeroSection({
       ),
     )
     .join(" / ");
+  const specializedExpertise =
+    profile.coreStrengths.find((strength) => strength.includes("LLMs")) ??
+    "Agentforce & OmniStudio";
 
   const kpis = [
     {
@@ -39,7 +42,7 @@ export function HeroSection({
     },
     {
       label: "Specialized Expertise",
-      value: "Agentforce & OmniStudio",
+      value: specializedExpertise,
       featured: true,
     },
   ];
@@ -57,7 +60,7 @@ export function HeroSection({
     <section className="relative overflow-hidden border-b border-border bg-hero">
       <div className="hero-network" aria-hidden="true" />
       <div className="relative mx-auto grid w-full max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-24">
-        <div className="max-w-4xl">
+        <div className="animate-hero-copy max-w-4xl">
           <p className="mb-5 inline-flex rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-sm font-semibold text-accent shadow-sm shadow-accent/10">
             {profile.currentRole}
           </p>
@@ -69,8 +72,8 @@ export function HeroSection({
               <div
                 className={
                   kpi.featured
-                    ? "rounded-lg border border-accent/35 bg-accent/10 p-4 shadow-xl shadow-accent/10 ring-1 ring-accent/10"
-                    : "rounded-lg border border-border/80 bg-surface/90 p-4 shadow-lg shadow-black/[0.04] ring-1 ring-white/40 dark:shadow-black/20 dark:ring-white/5"
+                    ? "animate-kpi-card rounded-lg border border-accent/35 bg-accent/10 p-4 shadow-xl shadow-accent/10 ring-1 ring-accent/10"
+                    : "animate-kpi-card rounded-lg border border-border/80 bg-surface/90 p-4 shadow-lg shadow-black/[0.04] ring-1 ring-white/40 dark:shadow-black/20 dark:ring-white/5"
                 }
                 key={kpi.label}
               >
@@ -96,7 +99,7 @@ export function HeroSection({
             </Button>
           </div>
         </div>
-        <div className="lg:pt-6">
+        <div className="animate-hero-side lg:pt-6">
           <ProfileSummary
             certificationCount={certificationCount}
             profile={profile}

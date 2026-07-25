@@ -16,7 +16,7 @@ export function MobileNavigation() {
       <button
         aria-expanded={open}
         aria-label="Toggle navigation"
-        className="inline-flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-md border border-border bg-surface transition hover:bg-surface-muted"
+        className="inline-flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-md border border-border bg-surface transition duration-200 hover:-translate-y-0.5 hover:border-accent/50 hover:bg-surface-muted"
         onClick={() => setOpen((value) => !value)}
         type="button"
       >
@@ -25,13 +25,14 @@ export function MobileNavigation() {
         <span className="h-0.5 w-4 rounded-full bg-foreground" />
       </button>
       {open ? (
-        <div className="absolute left-4 right-4 top-16 rounded-lg border border-border bg-surface p-3 shadow-xl shadow-black/10">
+        <div className="animate-mobile-menu absolute left-4 right-4 top-16 rounded-lg border border-border bg-surface p-3 shadow-xl shadow-black/10">
           <nav className="grid gap-1">
             {routes.map((route) => (
               <Link
                 className={cn(
-                  "rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition hover:bg-surface-muted hover:text-foreground",
-                  pathname === route.href && "bg-surface-muted text-foreground",
+                  "rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition duration-200 hover:bg-surface-muted hover:text-foreground",
+                  pathname === route.href &&
+                    "bg-accent/10 text-foreground ring-1 ring-accent/20",
                 )}
                 href={route.href}
                 key={route.href}

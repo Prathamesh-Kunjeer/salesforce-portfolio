@@ -9,7 +9,7 @@
       "Salesforce Development",
       "Service Cloud Solutions",
       "OmniStudio Consultation",
-      "Agentforce and AI Solutions",
+      "Agentforce, Agentic AI & LLMs",
       "Enterprise Integrations",
       "CRM Automation",
       "Agile Delivery",
@@ -306,6 +306,16 @@
         "Accelerated onboarding.",
         "Promoted a knowledge-sharing culture.",
         "Supported team development."
+      ]
+    },
+    {
+      "title": "Reverse Mentorship",
+      "description": "Conduct reverse mentoring sessions for experienced professionals across different domains, helping them understand and adopt modern AI tools such as ChatGPT, Claude, and Microsoft Copilot. Explain LLM fundamentals, practical enterprise use cases, prompt engineering basics, and demonstrate how AI can improve productivity, collaboration, and day-to-day work.",
+      "impact": [
+        "Conduct AI awareness and enablement sessions.",
+        "Train professionals on ChatGPT, Claude, and Microsoft Copilot.",
+        "Demonstrate practical enterprise AI use cases.",
+        "Promote responsible and effective AI adoption."
       ]
     },
     {

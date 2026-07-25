@@ -19,7 +19,7 @@ export function ProjectCard({
     : project.responsibilities.slice(0, 2);
 
   return (
-    <Card className="flex h-full flex-col gap-6">
+    <Card className="group flex h-full flex-col gap-6 hover:-translate-y-1 hover:border-accent/35 hover:shadow-xl hover:shadow-accent/10">
       <div className="flex flex-wrap items-center gap-2">
         <Badge>{project.domain}</Badge>
         {project.client ? <Badge>{project.client}</Badge> : null}

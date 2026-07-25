@@ -12,8 +12,8 @@ export function ProfileSummary({
   const domains = profile.domains.filter((domain) =>
     ["Telecommunications", "Insurance", "Financial Services"].includes(domain),
   );
-  const hasAgentforce = profile.coreStrengths.includes(
-    "Agentforce and AI Solutions",
+  const hasAgentforce = profile.coreStrengths.some((strength) =>
+    strength.startsWith("Agentforce"),
   );
   const hasOmniStudio = profile.coreStrengths.includes(
     "OmniStudio Consultation",

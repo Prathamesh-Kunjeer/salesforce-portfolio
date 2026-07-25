@@ -83,6 +83,91 @@ body {
   background: color-mix(in srgb, var(--accent) 28%, transparent);
 }
 
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes section-reveal {
+  from {
+    opacity: 0.72;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-hero-copy {
+  animation: hero-in 420ms ease-out both;
+}
+
+.animate-hero-side {
+  animation: hero-in 460ms ease-out 80ms both;
+}
+
+.animate-kpi-card {
+  animation: card-in 360ms ease-out both;
+}
+
+.animate-kpi-card:nth-child(2) {
+  animation-delay: 70ms;
+}
+
+.animate-kpi-card:nth-child(3) {
+  animation-delay: 120ms;
+}
+
+.animate-kpi-card:nth-child(4) {
+  animation-delay: 170ms;
+}
+
+.animate-mobile-menu {
+  animation: menu-in 180ms ease-out both;
+  transform-origin: top right;
+}
+
+@supports (animation-timeline: view()) {
+  main > section:not(:first-child) {
+    animation: section-reveal 420ms ease-out both;
+    animation-range: entry 0% cover 24%;
+    animation-timeline: view();
+  }
+}
+
 .bg-hero {
   background:
     radial-gradient(ellipse at 86% 12%, color-mix(in srgb, #ffffff 80%, transparent), transparent 16%),
@@ -123,4 +208,15 @@ body {
   background:
     linear-gradient(180deg, var(--background), color-mix(in srgb, var(--surface-muted) 65%, var(--background))),
     var(--background);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
 }
