@@ -290,7 +290,7 @@ Use Next.js App Router metadata for every route.
 Recommended metadata:
 
 - Home:
-  - Title: `Prathamesh Kunjeer | Salesforce Developer`
+  - Title: `Praathamesh Kunjjeerr | Salesforce Developer`
   - Description focused on Salesforce, Agentforce, OmniStudio, Apex, Service Cloud, and CRM automation.
 - Projects:
   - Title focused on Salesforce project experience.

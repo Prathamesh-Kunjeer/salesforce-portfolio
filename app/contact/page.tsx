@@ -5,7 +5,7 @@ import { createMetadata, personJsonLd } from "@/src/lib/seo";
 export const metadata = createMetadata({
   title: "Contact",
   description:
-    "Contact Prathamesh Kunjeer for Salesforce development, consulting, AI, and cloud technology opportunities.",
+    "Contact Praathamesh Kunjjeerr for Salesforce development, consulting, AI, and cloud technology opportunities.",
   path: "/contact",
 });
 

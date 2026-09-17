@@ -10,7 +10,7 @@ export function ResumeDownloadButton({
   return (
     <Button
       className={className}
-      download="Prathamesh_Kunjeer_Resume.pdf"
+      download="Praathamesh_Kunjjeerr_Resume.pdf"
       href="/resume.pdf"
       variant={variant}
     >
