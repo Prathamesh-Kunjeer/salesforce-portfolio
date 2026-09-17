@@ -15,7 +15,7 @@ export function ExternalLink({
   return (
     <a
       className={cn(
-        "inline-flex items-center gap-2 text-sm font-semibold text-accent transition hover:text-accent-strong",
+        "group inline-flex items-center gap-1.5 text-sm font-semibold text-accent transition duration-200 hover:text-accent-strong",
         className,
       )}
       href={href}
@@ -24,7 +24,12 @@ export function ExternalLink({
       {...props}
     >
       {children}
-      <span aria-hidden="true">-&gt;</span>
+      <span
+        aria-hidden="true"
+        className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1"
+      >
+        →
+      </span>
     </a>
   );
 }

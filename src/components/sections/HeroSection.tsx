@@ -60,14 +60,14 @@ export function HeroSection({
     <section className="relative overflow-hidden border-b border-border bg-hero">
       <div className="hero-network" aria-hidden="true" />
       <div className="relative mx-auto grid w-full max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-24">
-        <div className="animate-hero-copy max-w-4xl">
-          <p className="mb-5 inline-flex rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-sm font-semibold text-accent shadow-sm shadow-accent/10">
+        <div className="max-w-4xl">
+          <p className="animate-hero-pill mb-5 inline-flex rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-sm font-semibold text-accent shadow-sm shadow-accent/10">
             {profile.currentRole}
           </p>
-          <h1 className="max-w-3xl text-4xl font-semibold tracking-normal text-foreground sm:text-6xl">
+          <h1 className="animate-hero-heading max-w-3xl text-4xl font-semibold tracking-normal text-foreground sm:text-6xl">
             {profile.name}
           </h1>
-          <div className="mt-6 grid gap-3 sm:grid-cols-2">
+          <div className="animate-hero-kpis mt-6 grid gap-3 sm:grid-cols-2">
             {kpis.map((kpi) => (
               <div
                 className={
@@ -86,10 +86,10 @@ export function HeroSection({
               </div>
             ))}
           </div>
-          <p className="mt-6 max-w-3xl text-base leading-8 text-muted-foreground sm:text-lg">
+          <p className="animate-hero-summary mt-6 max-w-3xl text-base leading-8 text-muted-foreground sm:text-lg">
             {profile.summary}
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <div className="animate-hero-ctas mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <ResumeDownloadButton />
             <Button href="/projects" variant="secondary">
               View projects
@@ -109,7 +109,7 @@ export function HeroSection({
           </div>
         </div>
       </div>
-      <div className="relative border-t border-border/70 bg-surface/65 backdrop-blur">
+      <div className="animate-hero-credibility relative border-t border-border/70 bg-surface/65 backdrop-blur">
         <div className="mx-auto flex max-w-7xl flex-wrap gap-3 px-4 py-4 sm:px-6 lg:px-8">
           {credibility.map((item) => (
             <span

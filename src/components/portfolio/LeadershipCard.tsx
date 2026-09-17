@@ -5,7 +5,7 @@ import type { LeadershipItem } from "@/src/types/portfolio";
 
 export function LeadershipCard({ item }: { item: LeadershipItem }) {
   return (
-    <Card className="flex h-full flex-col gap-4">
+    <Card className="flex h-full flex-col gap-4 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg hover:shadow-accent/8">
       <div>
         {item.organization ? <Badge>{item.organization}</Badge> : null}
         <h3 className="mt-3 text-xl font-semibold text-foreground">

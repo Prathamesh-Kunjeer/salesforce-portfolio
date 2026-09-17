@@ -8,7 +8,7 @@ export function CertificationCard({
   certification: Certification;
 }) {
   return (
-    <Card className="flex h-full flex-col gap-4 border-accent/15">
+    <Card className="flex h-full flex-col gap-4 border-accent/15 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg hover:shadow-accent/8 hover:ring-1 hover:ring-accent/15">
       <div className="flex flex-wrap items-center justify-between gap-2">
         <Badge>{certification.category}</Badge>
         <span className="rounded-full border border-accent/30 bg-accent/10 px-2.5 py-1 text-xs font-semibold text-accent">

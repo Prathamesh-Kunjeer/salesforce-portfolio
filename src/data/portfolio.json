@@ -3,8 +3,8 @@
     "name": "Prathamesh Kunjeer",
     "currentRole": "Salesforce Developer / Administrator",
     "location": "Pune, Maharashtra, India",
-    "experience": "3.8+ years",
-    "summary": "Salesforce Developer with 3.8+ years of experience designing scalable CRM, Service Cloud, and telecom order management solutions. Skilled in Apex, Lightning Web Components, OmniStudio, Flow automation, Agentforce, and API integrations. Experienced in delivering enterprise solutions across Telecom, Insurance, and Financial Services domains, with a focus on efficient, user-centric applications powered by automation, AI, and modern Salesforce technologies.",
+    "experience": "4+ Years",
+    "summary": "Salesforce Developer with 4+ years of experience designing scalable CRM, Service Cloud, and telecom order management solutions. Skilled in Apex, Lightning Web Components (LWC), OmniStudio, Flow Automation, Agentforce, and API integrations. Experienced in delivering enterprise solutions across Telecom, Insurance, and Financial Services domains. Passionate about building efficient, user-centric applications that solve complex business problems through automation, AI, and modern Salesforce technologies.",
     "coreStrengths": [
       "Salesforce Development",
       "Service Cloud Solutions",
@@ -276,6 +276,69 @@
           "label": "GitHub Repository",
           "url": "https://github.com/Prathamesh-Kunjeer/AGENTFORCE-Arya-customer-service-agent"
         }
+      ]
+    },
+    {
+      "id": "personal-expense-management-platform",
+      "name": "Personal Expense Management Platform",
+      "role": "AI-Assisted Product Engineer",
+      "domain": "Full-Stack / Personal Project",
+      "overview": "Designed and developed a mobile-first expense management application addressing real-world requirements around daily expense tracking, categorization, budgeting, recurring expenses, transaction management, and monthly financial insights. Built end-to-end using AI-assisted development workflows — from architecture to deployment.",
+      "responsibilities": [
+        "Designed mobile-first UX for touch-friendly expense capture, dashboards, budgets, and calendar-based tracking.",
+        "Translated business requirements into application architecture, component design, and data persistence workflows.",
+        "Leveraged Generative AI and LLM-based development workflows for requirement analysis, implementation, debugging, and UI optimization.",
+        "Applied structured prompting and iterative AI-assisted development to diagnose issues, identify root causes, and accelerate feature delivery.",
+        "Implemented category/payment-method analytics, search and filtering, and import/export capabilities.",
+        "Validated functional workflows, data persistence, calculations, error handling, and regression scenarios.",
+        "Version-controlled through GitHub and deployed to Vercel in a production-ready architecture."
+      ],
+      "achievements": [
+        "Delivered a production-ready application from business requirement to Vercel deployment.",
+        "Demonstrated ability to convert business requirements into end-to-end digital solutions without a traditional engineering team.",
+        "Showcased AI as an engineering productivity and problem-solving layer, not just a code generator.",
+        "Built responsive visualizations and transaction workflows optimized for mobile and desktop devices.",
+        "Applied a product-engineering mindset: validated usability, error handling, and data accuracy beyond UI prototyping."
+      ],
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Vercel",
+        "GitHub",
+        "Generative AI",
+        "LLM-Assisted Development"
+      ]
+    },
+    {
+      "id": "jyotishveda-vedic-kundali-platform",
+      "name": "JyotishVeda – Vedic Kundali Analysis Platform",
+      "role": "AI-Assisted Product Engineer",
+      "domain": "Full-Stack / Personal Project",
+      "overview": "Designed and developed a full-featured Vedic astrology analysis platform that converts complex domain requirements into a user-friendly digital product — covering planetary positions, Drishti/aspects, Raj Yogas, D1–D12 divisional charts, Dasha, Remedies, and personalized Kundali insights — using AI-assisted product engineering throughout.",
+      "responsibilities": [
+        "Designed a rules-driven astrology analysis architecture separating planetary calculations, Drishti logic, Yoga detection, divisional-chart calculations, and UI presentation.",
+        "Leveraged Generative AI and LLM-assisted workflows for architecture, reusable component design, domain rule implementation, debugging, and responsive UX.",
+        "Implemented personalized analysis workflows using user Kundali data to generate chart-specific insights across career, wealth, relationships, and planetary influences.",
+        "Developed a profile-based UX with persistent birth profiles, automatic location/coordinate resolution, profile switching, and multilingual English/Marathi support.",
+        "Applied AI-assisted iterative engineering to diagnose UI/data inconsistencies, preserve business logic, and progressively improve accessibility, design systems, and localization.",
+        "Took the product through a full lifecycle: requirements → design → development → validation → debugging → UI refinement → GitHub → Vercel deployment."
+      ],
+      "achievements": [
+        "Delivered a production-ready Vedic astrology platform from a loosely defined business idea to a usable, deployed application.",
+        "Built a modular domain-driven architecture enabling new astrology capabilities to be added without rewriting core logic.",
+        "Demonstrated practical AI-assisted product engineering: requirement decomposition, domain-driven design, full-stack development, and rapid prototyping.",
+        "Implemented responsive experiences optimized for desktop, tablet, and mobile with multilingual English/Marathi support.",
+        "Showcased the ability to use AI as a product engineering and problem-solving layer, not simply as a coding assistant."
+      ],
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Vercel",
+        "GitHub",
+        "Generative AI",
+        "LLM-Assisted Development"
       ]
     }
   ],
