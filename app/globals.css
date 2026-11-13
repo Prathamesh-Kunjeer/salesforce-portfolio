@@ -30,16 +30,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #08111f;
-    --foreground: #edf5ff;
-    --surface: #0f1b2d;
-    --surface-muted: #13243a;
-    --border: #24364d;
-    --accent: #5aa9ff;
-    --accent-strong: #8ec5ff;
-    --accent-foreground: #06101d;
-    --muted: #142238;
-    --muted-foreground: #a9b8ca;
+    --background: #090d16;
+    --foreground: #ffffff;
+    --surface: #111a2e;
+    --surface-muted: #172338;
+    --border: #22344e;
+    --accent: #38bdf8;
+    --accent-strong: #818cf8;
+    --accent-foreground: #040914;
+    --muted: #172338;
+    --muted-foreground: #d0ddec;
   }
 }
 
@@ -57,16 +57,16 @@ html.light {
 }
 
 html.dark {
-  --background: #08111f;
-  --foreground: #edf5ff;
-  --surface: #0f1b2d;
-  --surface-muted: #13243a;
-  --border: #24364d;
-  --accent: #5aa9ff;
-  --accent-strong: #8ec5ff;
-  --accent-foreground: #06101d;
-  --muted: #142238;
-  --muted-foreground: #a9b8ca;
+  --background: #090d16;
+  --foreground: #ffffff;
+  --surface: #111a2e;
+  --surface-muted: #172338;
+  --border: #22344e;
+  --accent: #38bdf8;
+  --accent-strong: #818cf8;
+  --accent-foreground: #040914;
+  --muted: #172338;
+  --muted-foreground: #d0ddec;
 }
 
 * {
@@ -235,6 +235,18 @@ body {
 
 .bg-hero {
   background:
+    radial-gradient(ellipse at 84% 14%, color-mix(in srgb, #818cf8 14%, transparent), transparent 42%),
+    radial-gradient(circle at 74% 24%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 36%),
+    linear-gradient(135deg, color-mix(in srgb, #818cf8 7%, transparent), transparent 44%),
+    radial-gradient(circle at 18% 72%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 28%),
+    linear-gradient(color-mix(in srgb, var(--border) 16%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--border) 16%, transparent) 1px, transparent 1px),
+    var(--background);
+  background-size: auto, auto, auto, auto, 56px 56px, 56px 56px, auto;
+}
+
+html.light .bg-hero {
+  background:
     radial-gradient(ellipse at 86% 12%, color-mix(in srgb, #ffffff 80%, transparent), transparent 16%),
     radial-gradient(ellipse at 91% 18%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 21%),
     linear-gradient(135deg, color-mix(in srgb, var(--accent) 14%, transparent), transparent 44%),
@@ -250,23 +262,20 @@ body {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.55;
+  opacity: 0.28;
   background:
-    radial-gradient(ellipse at 82% 11%, color-mix(in srgb, var(--surface) 70%, transparent) 0 24px, transparent 25px),
-    radial-gradient(ellipse at 88% 10%, color-mix(in srgb, var(--surface) 55%, transparent) 0 18px, transparent 19px),
-    radial-gradient(ellipse at 91% 14%, color-mix(in srgb, var(--surface) 55%, transparent) 0 16px, transparent 17px),
-    linear-gradient(115deg, transparent 12%, color-mix(in srgb, var(--accent) 18%, transparent) 12.2%, transparent 12.6%),
-    linear-gradient(146deg, transparent 64%, color-mix(in srgb, var(--accent) 16%, transparent) 64.2%, transparent 64.7%),
-    radial-gradient(circle at 72% 28%, color-mix(in srgb, var(--accent) 55%, transparent) 0 3px, transparent 4px),
-    radial-gradient(circle at 82% 48%, color-mix(in srgb, var(--accent) 45%, transparent) 0 2px, transparent 3px),
+    linear-gradient(115deg, transparent 12%, color-mix(in srgb, var(--accent) 15%, transparent) 12.2%, transparent 12.6%),
+    linear-gradient(146deg, transparent 64%, color-mix(in srgb, #818cf8 14%, transparent) 64.2%, transparent 64.7%),
+    radial-gradient(circle at 72% 28%, color-mix(in srgb, var(--accent) 55%, transparent) 0 2px, transparent 3px),
+    radial-gradient(circle at 82% 48%, color-mix(in srgb, #818cf8 45%, transparent) 0 2px, transparent 3px),
     radial-gradient(circle at 64% 58%, color-mix(in srgb, var(--accent) 40%, transparent) 0 2px, transparent 3px);
 }
 
 .profile-frame {
   background:
-    radial-gradient(circle at 50% 10%, color-mix(in srgb, var(--accent) 26%, transparent), transparent 36%),
-    linear-gradient(120deg, transparent 20%, color-mix(in srgb, var(--accent) 12%, transparent) 20.2%, transparent 20.8%),
-    linear-gradient(135deg, color-mix(in srgb, var(--surface-muted) 70%, transparent), transparent);
+    radial-gradient(circle at 50% 12%, color-mix(in srgb, #818cf8 18%, transparent), transparent 42%),
+    linear-gradient(120deg, transparent 20%, color-mix(in srgb, var(--accent) 10%, transparent) 20.2%, transparent 20.8%),
+    linear-gradient(135deg, color-mix(in srgb, var(--surface-muted) 80%, transparent), transparent);
 }
 
 .bg-contact {
@@ -276,7 +285,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
+  *:not(.animate-cert-ticker):not(.animate-cert-ticker *):not(.cloud-1):not(.cloud-2):not(.cloud-3):not(.agent-ping),
   *::before,
   *::after {
     animation-duration: 1ms !important;
@@ -285,3 +294,125 @@ body {
     transition-duration: 1ms !important;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════
+   SALESFORCE BRAND ENHANCEMENTS
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── 1. Animated cloud drifting (Hero background) ── */
+@keyframes cloud-drift-1 {
+  0%   { transform: translateX(0px) translateY(0px) scale(1); opacity: 0.08; }
+  50%  { transform: translateX(32px) translateY(-10px) scale(1.04); opacity: 0.13; }
+  100% { transform: translateX(0px) translateY(0px) scale(1); opacity: 0.08; }
+}
+@keyframes cloud-drift-2 {
+  0%   { transform: translateX(0px) translateY(0px) scale(1); opacity: 0.06; }
+  50%  { transform: translateX(-24px) translateY(14px) scale(0.96); opacity: 0.11; }
+  100% { transform: translateX(0px) translateY(0px) scale(1); opacity: 0.06; }
+}
+@keyframes cloud-drift-3 {
+  0%   { transform: translateX(0px) translateY(0px); opacity: 0.05; }
+  60%  { transform: translateX(18px) translateY(-8px); opacity: 0.09; }
+  100% { transform: translateX(0px) translateY(0px); opacity: 0.05; }
+}
+
+.cloud-1 {
+  animation: cloud-drift-1 14s ease-in-out infinite;
+}
+.cloud-2 {
+  animation: cloud-drift-2 18s ease-in-out infinite;
+}
+.cloud-3 {
+  animation: cloud-drift-3 22s ease-in-out infinite;
+}
+
+/* ── 2. Cert ticker infinite marquee ── */
+@keyframes cert-ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-cert-ticker {
+  display: flex !important;
+  width: max-content !important;
+  animation: cert-ticker 24s linear infinite !important;
+  will-change: transform;
+}
+
+.animate-cert-ticker:hover {
+  animation-play-state: running;
+}
+
+/* ── 3. Trailhead achievement ring — hover pulse ── */
+@keyframes ring-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 50%, transparent); }
+  50%       { box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 0%, transparent); }
+}
+
+.cert-ring {
+  transition: transform 220ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.cert-ring:hover {
+  transform: scale(1.12) rotate(-6deg);
+  animation: ring-pulse 900ms ease-out;
+}
+
+/* ── 4. Project KPI callout ── */
+.kpi-callout {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent) 8%, transparent),
+    color-mix(in srgb, #00a1e0 6%, transparent)
+  );
+  border-left: 3px solid var(--accent);
+  transition: border-color 180ms ease-out;
+}
+
+.kpi-callout:hover {
+  border-left-color: var(--accent-strong);
+}
+
+/* ── 5. Lightning bolt skill chip glow ── */
+@keyframes chip-glow {
+  0%, 100% { box-shadow: none; }
+  50%      { box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 35%, transparent); }
+}
+
+.skill-chip-core {
+  transition: background 180ms ease-out, border-color 180ms ease-out, transform 160ms ease-out;
+}
+.skill-chip-core:hover {
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface-muted));
+  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+  transform: translateY(-1px);
+  animation: chip-glow 1.2s ease-in-out infinite;
+}
+
+/* ── 6. App Launcher active nav pill ── */
+.nav-active-pill {
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+  color: var(--accent);
+  box-shadow: 0 1px 4px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+/* ── 7. Wave divider (structural helper) ── */
+.wave-divider {
+  line-height: 0;
+  overflow: hidden;
+}
+
+/* ── 8. Agentforce "AI Active" pulsing badge ── */
+@keyframes agent-ping {
+  0%   { transform: scale(1); opacity: 0.8; }
+  70%  { transform: scale(2.2); opacity: 0; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+.agent-ping {
+  animation: agent-ping 1.6s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+

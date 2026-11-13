@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Praathamesh Kunjjeerr",
-    "currentRole": "Salesforce Developer / Administrator",
+    "currentRole": "Salesforce Agentforce Developer",
     "location": "Pune, Maharashtra, India",
     "experience": "4+ Years",
     "summary": "Salesforce Developer with 4+ years of experience designing scalable CRM, Service Cloud, and telecom order management solutions. Skilled in Apex, Lightning Web Components (LWC), OmniStudio, Flow Automation, Agentforce, and API integrations. Experienced in delivering enterprise solutions across Telecom, Insurance, and Financial Services domains. Passionate about building efficient, user-centric applications that solve complex business problems through automation, AI, and modern Salesforce technologies.",
@@ -44,6 +44,7 @@
       "Email-to-Case",
       "Web-to-Lead",
       "Agentforce",
+      "Agentforce SOMA",
       "OmniStudio"
     ],
     "development": [
@@ -78,6 +79,8 @@
     "ai": [
       "Agentforce",
       "Agentforce Actions",
+      "Agentforce Studio",
+      "SOMA Architecture",
       "Prompt Engineering",
       "Einstein Vector Search",
       "Retrieval-Augmented Generation",
@@ -134,9 +137,48 @@
       "issuer": "Salesforce",
       "category": "AI",
       "description": "Validates AI-powered customer service and Agentforce implementation capabilities."
+    },
+    {
+      "name": "Salesforce Certified Agentforce Field Service and Operations Consultant",
+      "issuer": "Salesforce",
+      "category": "Consultant",
+      "description": "Validates your ability to design, configure, and implement field service solutions using Salesforce Field Service."
     }
   ],
   "projects": [
+    {
+      "id": "credits-and-refund-agent",
+      "name": "Credits and Refund Agent",
+      "role": "Salesforce Agentforce Developer",
+      "client": "Telstra Vendor",
+      "domain": "AI & Customer Service Enhancements",
+      "overview": "Delivered as a compensation eligibility assessment capability inside the existing billing agent and console widget. The agent identifies the policy scenario, reads structured data, assesses eligibility against the credit policy, and shows the result with clear reasoning. Compensation is applied only after explicit instruction from the consultant and within their designation limit, with over-limit requests escalated to Team Leads. Automates repetitive CSR tasks while ensuring eligible refunds follow business rules.",
+      "responsibilities": [
+        "Developed Apex classes to retrieve, authenticate, and display contextual account details dynamically within the Agent chat window.",
+        "Customized the agent view and conversational interface using Lightning Types and Lightning Web Components (LWC).",
+        "Designed authentication and decision flows to validate CSR-entered account details and decide refund eligibility per credit policy rules.",
+        "Configured Agentforce topics, actions, and governance limits for consultant designation thresholds and Team Lead escalations.",
+        "Integrated the solution within SOMA Architecture, Agentforce Studio, and Service Cloud console to streamline case resolution."
+      ],
+      "achievements": [
+        "Reduced CSR case resolution time by 30 to 45 seconds per case (~3 to 4 hours saved daily across support teams).",
+        "Decreased overall case resolution time by 25% across multiple Salesforce orgs.",
+        "Increased customer satisfaction (CSAT) by up to 43% through rapid, context-aware responses.",
+        "Automated manual, repetitive eligibility checks with high accuracy and business rule compliance."
+      ],
+      "technologies": [
+        "Agentforce",
+        "Agentforce Studio",
+        "Apex",
+        "Lightning Web Components",
+        "Lightning Types",
+        "Flows",
+        "Service Cloud",
+        "REST API",
+        "SOMA Architecture"
+      ],
+      "category": "professional"
+    },
     {
       "id": "telstra-om-plus",
       "name": "Telstra OM+",
@@ -172,7 +214,8 @@
         "Agentforce",
         "Integration Procedures",
         "REST Integrations"
-      ]
+      ],
+      "category": "professional"
     },
     {
       "id": "unum-os",
@@ -208,7 +251,8 @@
         "Approval Processes",
         "Data Loader",
         "Security Model"
-      ]
+      ],
+      "category": "professional"
     },
     {
       "id": "piramal-finance",
@@ -234,7 +278,8 @@
         "Flows",
         "Service Cloud",
         "Sales Cloud"
-      ]
+      ],
+      "category": "professional"
     },
     {
       "id": "ai-customer-service-agent",
@@ -276,7 +321,8 @@
           "label": "GitHub Repository",
           "url": "https://github.com/Prathamesh-Kunjeer/AGENTFORCE-Arya-customer-service-agent"
         }
-      ]
+      ],
+      "category": "professional"
     },
     {
       "id": "personal-expense-management-platform",
@@ -308,7 +354,8 @@
         "GitHub",
         "Generative AI",
         "LLM-Assisted Development"
-      ]
+      ],
+      "category": "personal"
     },
     {
       "id": "jyotishveda-vedic-kundali-platform",
@@ -339,7 +386,8 @@
         "GitHub",
         "Generative AI",
         "LLM-Assisted Development"
-      ]
+      ],
+      "category": "personal"
     }
   ],
   "leadership": [

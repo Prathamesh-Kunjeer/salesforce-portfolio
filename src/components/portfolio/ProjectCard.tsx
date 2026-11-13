@@ -4,6 +4,14 @@ import { ExternalLink } from "@/src/components/ui/ExternalLink";
 import { TagList } from "@/src/components/ui/TagList";
 import type { Project } from "@/src/types/portfolio";
 
+function parseKpi(text: string): { metric: string } | null {
+  const match = text.match(/(\b\d+(?:\.\d+)?%|\b\d[\d,]*\+(?:\s*(?:records|users))?|\b\d+\s*to\s*\d+\s*(?:seconds|min|mins|hours|days)\b)/i);
+  if (match) {
+    return { metric: match[0].trim() };
+  }
+  return null;
+}
+
 export function ProjectCard({
   project,
   detailed = false,
@@ -45,16 +53,41 @@ export function ProjectCard({
             {project.overview}
           </p>
         </div>
-        <div className="rounded-lg border border-accent/20 bg-accent/10 p-4">
-          <p className="mb-2 text-sm font-semibold text-foreground">Impact</p>
-          <ul className="grid gap-2 text-sm text-muted-foreground">
-            {visibleAchievements.map((achievement) => (
-              <li key={achievement} className="flex gap-2">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                <span>{achievement}</span>
-              </li>
-            ))}
-          </ul>
+        <div className="rounded-lg border border-accent/20 bg-accent/5 p-4">
+          <div className="mb-3 flex items-center justify-between">
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">
+              Impact & Outcomes
+            </p>
+            <span className="rounded-full border border-accent/25 bg-accent/10 px-2 py-0.5 text-[10px] font-semibold text-accent">
+              Salesforce Metric
+            </span>
+          </div>
+          <div className="grid gap-2">
+            {visibleAchievements.map((achievement) => {
+              const kpi = parseKpi(achievement);
+              if (kpi) {
+                return (
+                  <div
+                    key={achievement}
+                    className="kpi-callout flex items-start gap-2.5 rounded-md p-2.5"
+                  >
+                    <span className="shrink-0 rounded bg-accent/15 px-2 py-0.5 font-mono text-xs font-bold text-accent">
+                      {kpi.metric}
+                    </span>
+                    <span className="text-xs font-medium leading-5 text-foreground">
+                      {achievement}
+                    </span>
+                  </div>
+                );
+              }
+              return (
+                <div key={achievement} className="flex gap-2 text-xs leading-5 text-muted-foreground">
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                  <span>{achievement}</span>
+                </div>
+              );
+            })}
+          </div>
         </div>
         <div>
           <p className="mb-2 text-sm font-semibold text-foreground">

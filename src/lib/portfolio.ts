@@ -54,3 +54,13 @@ export function getProjectTechnologies(): string[] {
     new Set(portfolioData.projects.flatMap((project) => project.technologies)),
   ).sort((a, b) => a.localeCompare(b));
 }
+
+export function getProfessionalProjects(): Project[] {
+  return portfolioData.projects.filter(
+    (p) => !p.category || p.category === "professional",
+  );
+}
+
+export function getPersonalProjects(): Project[] {
+  return portfolioData.projects.filter((p) => p.category === "personal");
+}

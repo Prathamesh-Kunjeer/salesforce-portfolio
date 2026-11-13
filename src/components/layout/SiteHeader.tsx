@@ -30,20 +30,29 @@ export function SiteHeader({ name }: { name: string }) {
           <span className="hidden sm:inline">{name}</span>
         </Link>
         <nav className="hidden items-center gap-1 rounded-full border border-border bg-background/65 p-1 shadow-inner shadow-black/[0.03] md:flex">
-          {routes.map((route) => (
-            <Link
-              className={cn(
-                "relative rounded-full px-4 py-2 text-sm font-medium text-muted-foreground transition duration-200 ease-out hover:text-foreground",
-                "after:absolute after:inset-x-4 after:bottom-1 after:h-0.5 after:origin-center after:scale-x-0 after:rounded-full after:bg-accent after:transition after:duration-200 hover:after:scale-x-100",
-                pathname === route.href &&
-                  "bg-surface text-foreground shadow-sm shadow-black/[0.06] after:scale-x-100",
-              )}
-              href={route.href}
-              key={route.href}
-            >
-              {route.label}
-            </Link>
-          ))}
+          {routes.map((route) => {
+            const isActive = pathname === route.href;
+            return (
+              <Link
+                className={cn(
+                  "relative flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition duration-200 ease-out",
+                  isActive
+                    ? "nav-active-pill font-semibold shadow-sm"
+                    : "text-muted-foreground hover:bg-surface-muted/60 hover:text-foreground",
+                )}
+                href={route.href}
+                key={route.href}
+              >
+                {isActive ? (
+                  <span
+                    aria-hidden="true"
+                    className="h-1.5 w-1.5 rounded-full bg-accent shadow-sm shadow-accent/50"
+                  />
+                ) : null}
+                {route.label}
+              </Link>
+            );
+          })}
         </nav>
         <div className="flex items-center gap-2">
           <div className="hidden md:block">

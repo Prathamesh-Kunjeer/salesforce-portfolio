@@ -45,6 +45,14 @@ export function AgentforceSection({
     >
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
+          {/* Salesforce Agentforce Presence Status Indicator */}
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-600 dark:text-emerald-400 shadow-sm shadow-emerald-500/10">
+            <span className="relative flex h-2 w-2">
+              <span className="agent-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+            </span>
+            Agentforce Active • Omni-Channel Ready
+          </div>
           <SectionHeader
             description="Hands-on AI service experience with Agentforce, retrieval-based answers, prompt defense, Apex-backed actions, and secure banking assistant workflows."
             eyebrow="Agentforce and AI"

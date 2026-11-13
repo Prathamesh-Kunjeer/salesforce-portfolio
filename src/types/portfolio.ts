@@ -54,6 +54,7 @@ export interface Project {
   technologies: string[];
   features?: string[];
   links?: Link[];
+  category?: "professional" | "personal";
 }
 
 export interface Link {

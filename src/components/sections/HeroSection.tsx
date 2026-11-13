@@ -58,7 +58,37 @@ export function HeroSection({
 
   return (
     <section className="relative overflow-hidden border-b border-border bg-hero">
+      {/* Original network overlay */}
       <div className="hero-network" aria-hidden="true" />
+
+      {/* Salesforce animated cloud silhouettes — soft ambient atmosphere */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+        {/* Cloud 1 — large, top-right */}
+        <svg
+          className="cloud-1 absolute -right-16 -top-8 h-72 w-72 fill-accent opacity-[0.035]"
+          viewBox="0 0 200 130"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M160,90 C160,90 175,90 175,75 C175,61 163,55 150,58 C148,42 135,30 118,30 C102,30 90,40 87,54 C83,52 78,51 73,51 C58,51 46,63 46,78 C46,78 46,90 60,90 Z" />
+        </svg>
+        {/* Cloud 2 — medium, mid-right */}
+        <svg
+          className="cloud-2 absolute right-8 top-32 h-48 w-48 fill-accent opacity-[0.025]"
+          viewBox="0 0 200 130"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M160,90 C160,90 175,90 175,75 C175,61 163,55 150,58 C148,42 135,30 118,30 C102,30 90,40 87,54 C83,52 78,51 73,51 C58,51 46,63 46,78 C46,78 46,90 60,90 Z" />
+        </svg>
+        {/* Cloud 3 — small accent, Agentforce violet tint */}
+        <svg
+          className="cloud-3 absolute -right-4 top-16 h-36 w-36 fill-[#818cf8] opacity-[0.045]"
+          viewBox="0 0 200 130"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M160,90 C160,90 175,90 175,75 C175,61 163,55 150,58 C148,42 135,30 118,30 C102,30 90,40 87,54 C83,52 78,51 73,51 C58,51 46,63 46,78 C46,78 46,90 60,90 Z" />
+        </svg>
+      </div>
+
       <div className="relative mx-auto grid w-full max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-24">
         <div className="max-w-4xl">
           <p className="animate-hero-pill mb-5 inline-flex rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-sm font-semibold text-accent shadow-sm shadow-accent/10">
